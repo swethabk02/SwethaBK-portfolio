@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: rgb(173, 173, 173);
+  color: #333333; 
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  background-color: rgb(236, 205, 205);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+.logo {
+  font-size: 25px;
+  color: #004080;
+  text-decoration: none;
+  font-weight: 500;
+}
+.nav a {
+  font-size: 18px;
+  color: #004080; 
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+  transition: 0.2s;
+}
+.nav a:hover,
+.nav a.active {
+  color: #FFA500; 
+}
+section {
+  padding: 60px 10%;
+  margin-top: 80px; 
+}
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  height: calc(100vh - 80px); 
+}
+.home-content {
+  max-width: 50%; 
+}
+.home-content h1 {
+  font-size: 48px; 
+  font-weight: 700;
+  line-height: 1.2;
+  color: #004080; 
+}
+.home-content h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #ff4800; 
+}
+.home-content p {
+  font-size: 16px;
+  color: #333333;
+}
+.home-image {
+  max-width: 45%; 
+  margin-left: 20px;
+}
+.home-image img {
+  width: 100%;
+  height: 400px; 
+  object-fit: cover; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+.about, .education, .skills, .portfolio, .contact {
+    background-color: rgb(221, 220, 220);
+  padding: 100px 10%; 
+}
+.about {
+  margin-bottom: 100px; 
+}
+.education{
+  margin-bottom: 100px;
+}
+.about h2, .education h2, .skills h2, .portfolio h2, .contact h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #004080; 
+  margin-bottom: 20px;
+}
+.about p, .education p, .skills ul, .portfolio .portfolio-items, .contact form {
+  font-size: 16px;
+  color: #333333; 
+}
+.skills {
+  width: 99vw; 
+  margin: 0; /* No margin */
+  padding: 100px 0; /* Adjust padding as needed */
+  
+}
+.skills .container {
+  padding: 20px;
+}
+.skills h2 {
+  margin-top: 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.skills .skill {
+  width: 600px;
+  margin-left: 80px;
+  margin-bottom: 20px;
+}
+.skills .progress {
+  background-color: #e9ecef; 
+  height: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  width: 100%; 
+  margin: 0; 
+}
+.skills .progress-bar {
+  background-color: grey;
+  color: white;
+  text-align: center;
+  line-height: 20px; /* Match the height for vertical centering */
+  height: 100%;
+  position: relative;
+}
+.skills .slider-button {
+  position: absolute;
+  top: 0;
+  width: 20px; /* Slightly bigger button */
+  height: 20px; /* Match the height of the progress bar */
+  background-color: #007bff;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+#projects .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(221, 220, 220);
+}
+
+.projects-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  width: 300px; /* Adjust the width as needed */
+  box-sizing: border-box;
+  margin: 10px;
+  transition: transform 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.project:hover {
+  transform: scale(1.05);
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+.project-details {
+  display: none;
+  text-align: left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+}
+
+.project:hover .project-details {
+  display: block;
+}
+
+h3 {
+  margin: 0 0 10px;
+}
+
+h5 {
+  margin: 0 0 20px;
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact .container {
+  width: 100%;
+  padding-left: 70px;
+  background-color: rgb(221, 220, 220);
+}
+
+#contact {
+    background-color: rgb(221, 220, 220);
+  padding: 100px 0;
+}
+footer {
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    text-align: center;
+}
